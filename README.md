@@ -8,7 +8,7 @@ file: DATA_PREPROCESSING.ipynb
 4. Repeat all files to same length
 5. see which files are in the zeropadded datasets and create the same datasets with repeated files
 ## Plots of validation loss and accuracy during training
-file: Learning_Plots.ipynb
+file: Learning_Plots.ipynb  
 Unfortunately we made a coding mistake when saving training loss. So we cannot display that
 ## Training + Results
 files: \[technqiue\]\_\[input\]\_\[emotion\]  
