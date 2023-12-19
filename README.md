@@ -11,7 +11,7 @@ file: DATA_PREPROCESSING.ipynb
 file: Learning_Plots.ipynb
 Unfortunately we made a coding mistake when saving training loss. So we cannot display that
 ## Training + Results
-files: \[technqiue\]_\[input\]_\[emotion\]  
+files: \[technqiue\]\_\[input\]\_\[emotion\]  
 Few notes:
 *  We did not clean code properly so there might be some artifacts like dropout layer (we considered it but then did not really use it)
 *  Names of the folders where we save data does not make sense in some cases
