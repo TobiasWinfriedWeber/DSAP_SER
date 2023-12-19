@@ -1,2 +1,4 @@
 # DSAP_SER
-Speech emotion recognition
+Information about the code:
+** Data Preprocessing **
+
