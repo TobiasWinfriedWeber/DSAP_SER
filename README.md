@@ -13,8 +13,14 @@ Unfortunately we made a coding mistake when saving training loss. So we cannot d
 ## Training + Results
 files: \[technqiue\]\_\[input\]\_\[emotion\]  
 Few notes:
-*  We did not clean code properly so there might be some artifacts like dropout layer (we considered it but then did not really use it)
+*  We did not clean code properly so there might be some artifacts like dropout layer (we considered it but then did not really use it) or the "Angry detection percentage"
+*  Also it is implemented such that mini-batch size training can be performed. However at the beginning we had to make a decision and we decided to change the learning rate instead to get out of this local minimum 
 *  Names of the folders where we save data does not make sense in some cases
 *  Trainingsloss not obtained correctly
 *  A few files seemed to be defect after preprocessing (as mentioned, we had problems with drive). Thats why this line is there: if not torch.isnan(input_save.unsqueeze(1)).any():
+## Predictive relevance
+file: PlotRelevance.ipynb  
+Here we were not sure how to actually do this. Also we did not find a lot on how to plot this.
+So we ended up doing one backpropagation with an input and displaying the gradients. We assume that bigger gradients mean more relevance because gradients are related to change. 
+
 
