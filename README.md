@@ -1,5 +1,5 @@
 # DSAP_SER
-Information about the code: 
+Information about the code. In general it is not the most elegant code. 
 ## Creating the data sets
 file: DATA_PREPROCESSING.ipynb
 1. Zeropad all files to same length
@@ -14,7 +14,7 @@ Unfortunately we made a coding mistake when saving training loss. So we cannot d
 files: \[technqiue\]\_\[input\]\_\[emotion\]  
 Few notes:
 *  We did not clean code properly so there might be some artifacts like dropout layer (we considered it but then did not really use it) or the "Angry detection percentage"
-*  Also it is implemented such that mini-batch size training can be performed. However at the beginning we had to make a decision and we decided to change the learning rate instead to get out of this local minimum 
+*  Also it is implemented such that mini-batch size training can be performed. However, at the beginning we had to make a decision and we decided to change the learning rate to get out of this local minimum 
 *  Names of the folders where we save data does not make sense in some cases
 *  Trainingsloss not obtained correctly
 *  A few files seemed to be defect after preprocessing (as mentioned, we had problems with drive). Thats why this line is there: if not torch.isnan(input_save.unsqueeze(1)).any():
