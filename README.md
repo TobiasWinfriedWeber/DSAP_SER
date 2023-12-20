@@ -1,7 +1,8 @@
 # DSAP_SER
 Information about the code. In general it is not the most elegant code. 
 ## Creating the data sets
-file: DATA_PREPROCESSING.ipynb
+file: DATA_PREPROCESSING.ipynb  
+Over the time we did it like this:
 1. Zeropad all files to same length
 2. For every emotion copy corresponding files in two folders: /[emotion] and /not[emotion]
 3. Create folder with balanced dataset out of step 2
@@ -9,14 +10,14 @@ file: DATA_PREPROCESSING.ipynb
 5. see which files are in the zeropadded datasets and create the same datasets with repeated files
 ## Plots of validation loss and accuracy during training
 file: Learning_Plots.ipynb  
-Unfortunately we made a coding mistake when saving training loss. So we cannot display that
+Unfortunately we made a coding mistake when saving training loss. So we cannot display that, only accuracy and validation loss
 ## Training + Results
 files: \[technqiue\]\_\[input\]\_\[emotion\]  
 Few notes:
 *  We did not clean code properly so there might be some artifacts like dropout layer (we considered it but then did not really use it) or the "Angry detection percentage"
 *  Also it is implemented such that mini-batch size training can be performed. However, at the beginning we had to make a decision and we decided to change the learning rate to get out of this local minimum 
 *  Names of the folders where we save data does not make sense in some cases
-*  Trainingsloss not obtained correctly
+*  Trainingsloss not obtained correctly, so plots of trainingsloss in those files do not make sense
 *  A few files seemed to be defect after preprocessing (as mentioned, we had problems with drive). Thats why this line is there: if not torch.isnan(input_save.unsqueeze(1)).any():
 ## Predictive relevance
 file: PlotRelevance.ipynb  
